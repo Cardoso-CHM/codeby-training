@@ -40,7 +40,38 @@
   max-width: none !important;
 }
 
-.imageNormal {
-  height: 200px;
-  width: 250px;
+.containerNormal {
+  position: relative;
+  cursor: default;
+}
+
+.containerNormal:hover::after {
+  content: "Ver mais";
+  cursor: pointer;
+  font-size: 20px;
+  color: #008BEA;
+  padding: 1rem 3.5rem;
+  border: 2px solid #008BEA;
+  position: absolute;
+  top: calc(50% - 100px);
+  left: calc(50% - 97px);
+  border-radius: 4px;
+  opacity: 1;
+  pointer-events: none;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.containerNormal:hover::before {
+  content: "";
+  background-color: #ffffff99;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  cursor: default;
+  pointer-events: none;
 }

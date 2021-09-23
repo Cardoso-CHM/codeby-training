@@ -163,6 +163,17 @@
       "add-to-cart-button"
     ]
   },
+  "product-summary-image": {
+    "props": {
+      "width": {
+        "desktop": 250,
+        "mobile": 250
+      },
+      "hoverImage ": {
+        "label": "Ver mais"
+      }
+    }
+  },
   "product-summary-name": {
     "props": {
       "blockClass": "productNameStyle"
