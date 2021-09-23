@@ -160,21 +160,6 @@
       "thumbnailMaxHeight": 0
     }
   },
-  // "product-images#footer": {
-  //   "props": {
-  //     "showNavigationArrows": false,
-  //     "showPaginationDots": false
-  //   }
-  // },
-  // "sticky-layout#desktop-footer": {
-  //   "title": "sticky-button",
-  //   "props": {
-  //     "position": "bottom",
-  //     "blockClass": "desktopStickyWrapper"
-  //   },
-  //   "children": [
-  //   ]
-  // },
   "responsive-layout.mobile#product-page": {
     "children": [
       "flex-layout.row#wrapper-product-mobile"

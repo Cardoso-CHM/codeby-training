@@ -64,22 +64,3 @@
 .filterMessage {
   display: none;
 }
-
-.galleryItem:hover {
-  opacity: 0.3;
-  transition: all 0.3s ease-in;
-}
-
-.galleryItem:hover::after {
-  content: "Ver mais";
-  font-size: 20px;
-  color: #008BEA;
-  padding: 1rem 2rem;
-  border: 1px solid #008BEA;
-  position: relative;
-  top: -300px;
-  left: 60px;
-  border-radius: 4px;
-  z-index: 9999;
-  opacity: 1;
-}
