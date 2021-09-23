@@ -1,0 +1,5 @@
+.vtex-store-components-3-x-productImagesGallerySwiperContainer
+  .swiper-wrapper
+  .vtex-store-components-3-x-productImagesGallerySlide :not(:first-child) {
+    display: none !important;
+} 

@@ -1,0 +1,11 @@
+{
+  "custom-menu": {
+    "component": "CustomMenuWrapper"
+  },
+  "custom-pagination": {
+    "component": "Pagination"
+  },
+  "store-wrapper": {
+    "component": "StoreWrapper"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#links",
+      "flex-layout.row#info"
+    ]
+  },
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#links",
+      "flex-layout.row#info"
+    ]
+  },
+  "flex-layout.row#links": {
+    "props": {
+      "fullWidth": true,
+      "blockClass": "linksWrapper"
+    },
+    "children": [
+      "link#quem-somos",
+      "link#atendimento",
+      "link#minha-conta"
+    ]
+  },
+  "link#quem-somos": {
+    "props": {
+      "href": "/about-us",
+      "label": "Quem somos",
+      "blockClass": "customLinkStyle"
+    }
+  },
+  "link#atendimento": {
+    "props": {
+      "href": "/suport",
+      "label": "Atendimento",
+      "blockClass": "customLinkStyle"
+    }
+  },
+  "link#minha-conta": {
+    "props": {
+      "href": "/account",
+      "label": "Minha conta",
+      "blockClass": "customLinkStyle"
+    }
+  },
+  "flex-layout.row#info": {
+    "props": {
+      "fullWidth": true,
+      "blockClass": "infoWrapper"
+    },
+    "children": [
+      "rich-text#info"
+    ]
+  },
+  "rich-text#info": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "© 2020, Codeby | Tecnologia para negócios Powered by Shopify",
+      "font": "t-body"
+    }
+  }
+}

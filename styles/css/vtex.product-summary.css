@@ -1,0 +1,46 @@
+.nameWrapper--productNameStyle {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.brandName--productNameStyle {
+  color: #707070;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: normal;
+  font-family: 'Roboto';
+}
+
+.nameContainer--productNameStyle {
+  flex-grow: 1;
+}
+
+.element :global(
+  .vtex-button
+) {
+  border: none;
+  background-color: #008BEA;
+  color: #fff;
+  margin-top: 12px;
+  
+  text-transform: capitalize;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+}
+
+.containerNormal  {
+  max-width: none !important;
+}
+
+.imageNormal {
+  height: 200px;
+  width: 250px;
+}

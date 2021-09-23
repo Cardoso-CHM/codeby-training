@@ -1,0 +1,49 @@
+.footerLayout {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerLayout :global(
+  .vtex-flex-layout-0-x-flexRow--linksWrapper
+){
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  max-width: 468px;
+  padding: 48px 24px 0 24px;
+}
+
+.footerLayout :global(
+  .vtex-flex-layout-0-x-flexRowContent--linksWrapper
+){
+  display: flex;
+}
+
+.footerLayout :global(
+  .vtex-flex-layout-0-x-flexRow--infoWrapper
+){
+  display: flex;
+  justify-content: center;
+  max-width: 468px;
+}
+
+.footerLayout :global(
+  .vtex-store-link-0-x-link--customLinkStyle
+){
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 14px;
+  color: #5a5a5a;
+  width: auto;
+}
+
+.footerLayout :global(
+  .vtex-rich-text-0-x-paragraph
+){
+  font-family: 'Roboto';
+  font-size: 14px;
+  margin: 25px 65px;
+}

@@ -1,0 +1,13 @@
+.installments--installmentsStyle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #008BEA;
+  margin: 0;
+  margin-top: 4px;
+}
+
+.spotPrice {
+  color: #242424;
+  font-family: 'Roboto';
+}

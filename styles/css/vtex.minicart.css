@@ -1,0 +1,11 @@
+.openIconContainer {
+  padding: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.openIconContainer :global(
+  .vtex-button__label
+) {
+  padding: 0;
+}

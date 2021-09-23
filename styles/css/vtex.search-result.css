@@ -1,0 +1,85 @@
+.searchResultContainer--wrapper {
+  padding: 0;
+}
+
+.loadingOverlay--wrapper {
+  display: flex;
+  justify-content: center;
+  max-width: 1134px;
+  margin-top: 12px;
+}
+
+.galleryTitle--layout {
+  font-size: 30px;
+  font-weight: bold;
+  color: #505050;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.filter__container {
+  border: none;
+}
+
+.filtersWrapper {
+  border: 1px solid #D6D6D6;
+  border-radius: 0 0 4px 4px;
+  border-top: none;
+  padding: 16px;
+}
+
+.filter__container--selectedFilters,
+.filter__container--category-1,
+.filter__container--category-2,
+.filter__container--material,
+.filter__container--shoes-size,
+.filter__container--priceRange,
+.filterIcon {
+  display: none;
+}
+
+.filterTitle {
+  color: #202020;
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+.filterItem :global(
+  .vtex-checkbox__line-container
+) {
+  display: flex;
+  align-items: center;
+}
+
+.filterItem :global(
+  .vtex-checkbox__label
+) {
+  text-transform: capitalize;
+  color: #646464;
+  font-family: 'Roboto';
+  font-size: 16px;  
+}
+
+.filterMessage {
+  display: none;
+}
+
+.galleryItem:hover {
+  opacity: 0.3;
+  transition: all 0.3s ease-in;
+}
+
+.galleryItem:hover::after {
+  content: "Ver mais";
+  font-size: 20px;
+  color: #008BEA;
+  padding: 1rem 2rem;
+  border: 1px solid #008BEA;
+  position: relative;
+  top: -300px;
+  left: 60px;
+  border-radius: 4px;
+  z-index: 9999;
+  opacity: 1;
+}

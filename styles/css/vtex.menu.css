@@ -1,0 +1,19 @@
+.styledLinkContent--categoriesMenuStyle {
+  font-size: 18px;
+  padding: .75rem 0;
+  font-family: 'Roboto';
+}
+.styledLinkContent--categoriesMenuStyle {
+  font-size: 18px;
+  padding: 0.75rem;
+  font-family: 'Roboto';
+}
+
+.styledLinkContainer--categoriesMenuStyleDesktop {
+  margin-left: 0;
+  padding-bottom: 6px;
+}
+
+.menuContainerNav--categoriesMenuStyleDesktop {
+  border-bottom: 1px solid #d5d5d5;
+}

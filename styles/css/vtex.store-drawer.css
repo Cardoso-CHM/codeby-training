@@ -1,0 +1,38 @@
+.openIconContainer {
+  padding: 0;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+}
+
+.drawerHeader--main {
+  width:100%;
+  justify-content: space-between;
+  padding: 1rem 1rem 0 1.5rem;
+}
+
+.childrenContainer :global(
+  .vtex-flex-layout-0-x-flexRow--teste1
+) {
+  width: 100%;
+}
+.childrenContainer :global(
+  .vtex-button__label
+) {
+  padding: 0;
+}
+
+.childrenContainer :global(
+  .vtex-flex-layout-0-x-flexCol--menuActionsStyle
+) {
+  margin-top: 1rem;
+  border-top: 1px solid #aaa;
+  color: #aaa;
+  padding: .75rem 1rem;
+  padding-left: 0;
+}

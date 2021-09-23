@@ -1,0 +1,212 @@
+.imageElement--homeBanner {
+  width: 100%;
+  height: 250px;
+  margin-top: 24px;
+}
+
+.searchBarInnerContainer {
+  margin: 0;
+}
+
+.searchBarContainer {
+  padding: 0 12px;
+  max-width: 430px;
+}
+
+.autoCompleteOuterContainer :global(
+  .vtex-input__suffix
+) {
+  padding-right: 0;
+  padding-left: 6px;
+}
+.autoCompleteOuterContainer :global(
+  .vtex-input-prefix__group
+) {
+  border: unset;
+  height: 45px;
+  justify-content: space-between;
+}
+
+.autoCompleteOuterContainer :global(
+  .vtex-styleguide-9-x-input
+) {
+  height: 45px;
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+  max-width: 100%;
+}
+
+.searchBarIcon {
+  padding: 0 20px;
+  height: 45px;
+  background-color: #008BEA;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Roboto';
+  border-radius: 4px;
+}
+
+.searchBarIcon::after {
+  content: "Buscar";
+} 
+
+.searchIcon {
+  display: none;
+}
+
+.logoContainer {
+  padding: 0;
+}
+
+.infoCardContainer--bannerDesktopStyle {
+  height: 284px;
+  margin-top: 16px;
+}
+
+.infoCardTextContainer--bannerDesktopStyle {
+  margin: 0 25px 0 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoCardHeadline--bannerDesktopStyle {
+  font-size: 24px;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+.infoCardCallActionContainer--bannerDesktopStyle :global(
+  .vtex-button
+) {
+  background: none;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: #444;
+
+  margin-top: 25px;
+  
+  font-family: 'Roboto';
+  text-transform: capitalize;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.container {
+  padding: 0;
+}
+
+.productNameContainer {
+  font-size: 24px;
+  font-weight: bold;
+  color: #707070;
+  text-transform: capitalize;
+}
+
+.productDescriptionTitle {
+  font-size: 24px;
+  color: #707070;
+  font-weight: bold;
+
+  border-bottom: 1px solid #D5D5D5;
+  padding-bottom: 18px;
+  padding-top: 4rem;
+}
+
+.productNameContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.productReference {
+  font-size: 16px;
+  font-family: 'Roboto';
+  font-weight: normal;
+  color: #A4A4A4;
+  text-transform: capitalize;
+}
+
+.productBrandName {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #BCBCBC;
+}
+
+.shippingContainer {
+  display: flex;
+}
+
+.shippingContainer :global(
+  .vtex-button
+) {
+  border: none;
+  background: none;
+  width: auto;
+  height: auto;
+  height: 45px;
+}
+
+.shippingContainer :global(
+  .vtex-button__label
+) {
+  display: none;
+}
+
+.shippingContainer :global(
+  .vtex-input__label
+) {
+  display: none;
+}
+
+
+.shippingContainer :global(
+  .vtex-address-form__postalCode
+) {
+  padding: 0;
+  width: 100%;
+}
+.shippingContainer :global(
+  .vtex-button
+)::after {
+  content: "OK";
+  font-family: 'Roboto';
+  background-color: #545454;
+  color: #FFFFFF;
+  padding: .85rem;
+  border-radius: 4px;
+}
+
+.shippingContainer :global(
+  .vtex-address-form__postalCode-forgottenURL
+) {
+  display: none;
+}
+
+.shippingContainer :global(
+  .vtex-input__suffix
+) {
+  padding: 0;
+  padding-left: 12px;
+}
+
+.shippingContainer :global(
+  .vtex-input-prefix__group
+) {
+  height: 45px
+}
+
+.shippingContainer :global(
+  .vtex-address-form-4-x-input
+) {
+  border: 1px solid #9B9B9B;
+  border-radius: 4px;
+}
+
+.shippingContainer :global(
+  .vtex-input-prefix__group
+) {
+  border: none;
+}
+
+.productImageTag--main {
+  max-height: 390px!important;
+}

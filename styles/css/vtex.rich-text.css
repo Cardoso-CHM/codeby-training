@@ -1,0 +1,37 @@
+.paragraph--titleStyle {
+  font-family: 'Roboto';
+  font-size: 26px;
+  font-weight: bold;
+  color: #505050;
+  margin-bottom: 1rem;
+}
+
+.paragraph--titleStyleDesktop {
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-weight: bold;
+  color: #505050;
+  margin-bottom: 1rem;
+}
+
+.paragraph--descontoWrapper {
+  margin-bottom: 0;
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #707070;
+}
+
+.paragraph--shippingTitle {
+  font-weight: bold;
+  color: #242424;
+  font-family: 'Roboto';
+  margin: 0;
+  margin-top: 24px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .wrapper--titleStyle {
+    width: 100%;
+    border-bottom: 1px solid #D5D5D5;
+  }
+}

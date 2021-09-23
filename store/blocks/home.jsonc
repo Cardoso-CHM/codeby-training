@@ -1,0 +1,188 @@
+{
+  "store.home": { 
+    "blocks": [
+      "responsive-layout.desktop",
+      "responsive-layout.mobile"
+    ]
+  },
+  "responsive-layout.desktop": {
+    "children": [
+      "flex-layout.row#desktop-wrapper"
+    ]
+  },
+  "flex-layout.row#desktop-wrapper": {
+    "children": [
+      "flex-layout.col#desktop-wrapper"
+    ]
+  },
+  "flex-layout.col#desktop-wrapper": {
+    "props": {
+      "blockClass": ["desktopWrapper"]
+    },
+    "children": [
+      "info-card#banner-desktop",
+      "flex-layout.col#destaques-desktop",
+      "flex-layout.col#lancamentos-desktop"
+    ]
+  },
+  "info-card#banner-desktop": {
+    "props": {
+      "id": "info-card-desktop",
+      "isFullModeStyle": true,
+      "textPosition": "right",
+      "imageUrl": "assets/img/banner-desktop.jpeg",
+      "headline": "Banner Principal",
+      "callToActionText": "Comprar",
+      "blockClass": "bannerDesktopStyle",
+      "textAlignment": "center"
+    }
+  },
+  "flex-layout.col#destaques-desktop": {
+    "children": [ 
+      "rich-text#destaques-desktop",
+      "list-context.product-list#desktop",
+      "list-context.product-list#desktop",
+      "list-context.product-list#desktop"
+    ]
+  },
+  "rich-text#destaques-desktop": {
+    "props": {
+      "text": "Produtos em Destaque",
+      "blockClass": "titleStyleDesktop"
+    }
+  },
+  "flex-layout.col#lancamentos-desktop": {
+    "children": [ 
+      "rich-text#lancamentos-desktop",
+      "list-context.product-list#desktop",
+      "list-context.product-list#desktop"
+    ]
+  },
+  "rich-text#lancamentos-desktop": {
+    "props": {
+      "text": "Lançamentos",
+      "blockClass": "titleStyleDesktop"
+    }
+  },
+  "list-context.product-list#desktop": {
+    "props": {
+      "hideUnavailableItems": true
+    },
+    "blocks": [
+      "product-summary.shelf#desktop"
+    ],
+    "children": [
+      "slider-layout#desktop"
+    ]
+  },
+  "product-summary.shelf#desktop": {
+    "props": {
+      "collection": "177"
+    },
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-installments",
+      "add-to-cart-button"
+    ]
+  },
+  "slider-layout#desktop": {
+    "props": {
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "itemsPerPage": {
+        "desktop": 4,
+        "mobile": 1,
+        "tablet": 1
+      }
+    }
+  },
+  "responsive-layout.mobile": {
+    "children": [
+      "image#banner-mobile",
+      "flex-layout.row#content"
+    ]
+  },
+  "image#banner-mobile": {
+    "props": {
+      "src": "assets/img/bg-teste2.jpg",
+      "blockClass": "homeBanner"
+    }
+  },
+  "flex-layout.row#content": { // main content
+    "children": [
+      "flex-layout.col#content"
+    ],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#content": {
+    "children": [
+      "rich-text#destaques",
+      "list-context.product-list#mobile",
+      "list-context.product-list#mobile",
+      "rich-text#lancamentos",
+      "list-context.product-list#mobile",
+      "list-context.product-list#mobile",
+      "list-context.product-list#mobile"
+    ],
+    "props": {
+      "blockClass": ["homeContentMobile"],
+      "fullWidth": true
+    }
+  },
+  "rich-text#destaques": {
+    "props": {
+      "text": "Produtos em Destaque",
+      "blockClass": "titleStyle"
+    }
+  },
+  "list-context.product-list#mobile": {
+    "props": {
+      "hideUnavailableItems": true
+    },
+    "blocks": [
+      "product-summary.shelf#mobile"
+    ],
+    "children": [
+      "slider-layout"
+    ]
+  },
+  "slider-layout": {
+    "props": {
+      "showPaginationDots": "never",
+      "arrowSize": 12
+    }
+  },
+  "product-summary.shelf#mobile": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-installments",
+      "add-to-cart-button"
+    ]
+  },
+  "product-summary-name": {
+    "props": {
+      "blockClass": "productNameStyle"
+    }
+  },
+  "product-installments": {
+    "props": {
+      "message": "{installmentsNumber}x de {installmentValue} sem juros",
+      "blockClass": "installmentsStyle"
+    }
+  },
+  "add-to-cart-button": {
+    "props": {
+      "text": "Comprar"
+    }
+  },
+  "rich-text#lancamentos": {
+    "props": {
+      "text": "Lançamentos",
+      "blockClass": "titleStyle"
+    }
+  }
+}

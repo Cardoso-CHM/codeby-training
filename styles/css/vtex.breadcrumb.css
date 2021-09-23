@@ -1,0 +1,32 @@
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.homeIcon {
+  display: none;
+}
+
+.homeLink::after {
+  content: "página inicial";
+}
+
+.arrow--1::before {
+  content: "/ "
+}
+
+.caretIcon {
+  display: none;
+}
+
+.termArrow {
+  display: none;
+}
+
+.term {
+  display: none;
+}
+
+.link--1 {
+  text-transform: lowercase;
+}

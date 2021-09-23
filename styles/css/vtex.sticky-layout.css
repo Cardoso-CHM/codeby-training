@@ -1,0 +1,28 @@
+.wrapper--sticky-header {
+  background-color: white;
+}
+
+.wrapper--addToCartSticky {
+  height: auto !important;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.container--addToCartSticky {
+  padding: 1rem;
+  background-color: white;
+}
+
+.container--addToCartSticky :global(
+  .vtex-button
+) {
+  font-family: 'Roboto';
+  background-color: #008BEA;
+  border: 1px solid #008BEA;
+  color: #fff;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 20px;
+}

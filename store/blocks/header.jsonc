@@ -1,0 +1,409 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#wrapper"
+    ]
+  },
+  "flex-layout.row#wrapper": {
+    "children": [
+      "flex-layout.col#wrapper"
+    ],
+    "props": {
+
+    }
+  },
+  "flex-layout.col#wrapper": {
+    "children": [
+      "sticky-layout#desktop",
+      "flex-layout.row#menu-desktop"
+    ],
+    "props": {
+      "blockClass": ["headerWrapperDesktop"]
+    }
+  },
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      "flex-layout.row#desktop"
+    ]
+  },
+  "flex-layout.row#desktop": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "headerWrapperDesktop"
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.row#spacer",
+      "flex-layout.row#actions-desktop"
+    ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/img/logo-codeby.png",
+      "height": 44,
+      "mobileHeight": 28
+    }
+  },
+  "flex-layout.row#spacer": {
+    "props": {
+      "width": "grow",
+      "horizontalAlign": "center",
+      "blockClass": "searchBarWrapper"
+    },
+    "children": [
+      "search-bar"
+    ]
+  },
+  "flex-layout.row#actions-desktop": {
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "blockClass": "actionsWrapper"
+    },
+    "children": [
+      "link#entrar",
+      "link#meus-pedidos",
+      "minicart.v2"
+    ]
+  },
+  "link#entrar": {
+    "props": {
+      "href": "/login?returnUrl={queryString.returnUrl}",
+      "label": "Entrar",
+      "blockClass": "menuLinkStyle"
+    }
+  },
+  "link#meus-pedidos": {
+    "props": {
+      "href": "/account#/orders",
+      "label": "Meus Pedidos",
+      "blockClass": "menuLinkStyle"
+    }
+  },
+  "flex-layout.row#menu-desktop": {
+    "props": {
+      "fullWidth": true
+    },
+    "children": [
+      "vtex.menu@2.x:menu#desktop"
+    ]
+  },
+  "vtex.menu@2.x:menu#desktop": {
+    "props": {
+      "orientation": "horizontal",
+      "blockClass": [
+        "categoriesMenuStyleDesktop"
+      ],
+      "items": [
+        {
+          "id": "d1-c1",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/smartphones",
+            "noFollow": false,
+            "tagTitle": "Smartphones",
+            "text": "Smartphones"
+          }
+        },
+        {
+          "id": "d1-category-1",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/roupas",
+            "noFollow": false,
+            "tagTitle": "Roupas",
+            "text": "Roupas"
+          }
+        },
+        {
+          "id": "d1-category-2",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/acessorios",
+            "noFollow": false,
+            "tagTitle": "Acessórios",
+            "text": "Acessórios"
+          }
+        },
+        {
+          "id": "d1-category-3",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/eletronicos",
+            "noFollow": false,
+            "tagTitle": "Eletrônicos",
+            "text": "Eletrônicos"
+          }
+        },
+        {
+          "id": "d1-category-4",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/promocao",
+            "noFollow": false,
+            "tagTitle": "Promoção",
+            "text": "Promoção"
+          }
+        }
+      ]
+    },
+    "title": "Menu Categorias Mobile"
+  },
+  "header-layout.mobile": {
+    "children": [
+      "sticky-layout#mobile",
+      "search-bar"
+    ]
+  },
+  "sticky-layout#mobile": {
+    "children": ["flex-layout.row#mobile"]
+  },
+  "flex-layout.row#mobile": {
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    },
+    "children": [
+      "drawer",
+      "flex-layout.col#spacer-mobile",
+      "flex-layout.col#minicart"
+    ]
+  },
+  "drawer": {
+    "blocks": ["drawer-header"],
+    "props": {
+      "type": "filled"
+    },
+    "children": [
+      "flex-layout.row#menu-content"
+    ]
+  },
+  "drawer-header": {
+    "props": {
+      "blockClass": "main"
+    },
+    "children": [
+      "image#menu-toggle",
+      "drawer-close-button"
+    ]
+  },
+  "image#menu-toggle": {
+    "props": {
+      "src": "assets/img/menu-icon.svg"
+    }
+  },
+  "drawer-close-button": {
+    "props": {
+      "size": 24
+    }
+  },
+  "flex-layout.row#menu-content": {
+    "props": {
+      "blockClass": "teste1"
+    },
+    "children": [
+      "flex-layout.row#menu-content-col"
+    ]
+  },
+  "flex-layout.row#menu-content-col": {
+    "props": {
+      "fullWidth": true
+    },
+    "children": [
+      "vtex.menu@2.x:menu#categories",
+      "flex-layout.col#menu-content-col-actions"
+    ]
+  },
+  "vtex.menu@2.x:menu#categories": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "categoriesMenuStyle"
+      ],
+      "items": [
+        {
+          "id": "d1-c1",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/smartphones",
+            "noFollow": false,
+            "tagTitle": "Smartphones",
+            "text": "Smartphones"
+          }
+        },
+        {
+          "id": "d1-category-1",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/roupas",
+            "noFollow": false,
+            "tagTitle": "Roupas",
+            "text": "Roupas"
+          }
+        },
+        {
+          "id": "d1-category-2",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/acessorios",
+            "noFollow": false,
+            "tagTitle": "Acessórios",
+            "text": "Acessórios"
+          }
+        },
+        {
+          "id": "d1-category-3",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/eletronicos",
+            "noFollow": false,
+            "tagTitle": "Eletrônicos",
+            "text": "Eletrônicos"
+          }
+        },
+        {
+          "id": "d1-category-4",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/promocao",
+            "noFollow": false,
+            "tagTitle": "Promoção",
+            "text": "Promoção"
+          }
+        }
+      ]
+    },
+    "title": "Menu Categorias Mobile"
+  },
+  "flex-layout.col#menu-content-col-actions": {
+    "props": {
+      "blockClass": "menuActionsStyle"
+    },
+    "children": [
+    "vtex.menu@2.x:menu#actions"
+    ]
+  },
+  "vtex.menu@2.x:menu#actions": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "categoriesMenuStyle"
+      ],
+      "items": [
+        {
+          "id": "login",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/login?returnUrl={queryString.returnUrl}",
+            "noFollow": false,
+            "tagTitle": "Entrar",
+            "text": "Entrar"
+          }
+        },
+        {
+          "id": "meus-pedidos",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/account#/orders",
+            "noFollow": false,
+            "tagTitle": "Meus Pedidos",
+            "text": "Meus Pedidos"
+          }
+        }
+      ],
+    "title": "Menu Categorias Mobile"
+    }
+  },
+  "flex-layout.col#spacer-mobile": {
+    "props": {
+      "width": "grow",
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "logo"
+    ]
+  },
+  "flex-layout.col#minicart": {
+    "children": [
+      "minicart.v2"
+    ]
+  },
+  "minicart.v2": {
+    "props": {
+      "MinicartIcon": "icon-cart#minicart-icon"
+    },
+    "children": ["minicart-base-content"]
+  },
+  "icon-cart#minicart-icon": {
+    "props": {
+      "size": 22
+    }
+  },
+  "search-bar": {
+    "props": {
+      "autocompleteFullWidth": false,
+      "placeholder": "Buscar produtos",
+      "displayMode": "search-button",
+      "blockClass": "searchBarWrapper"
+    }
+  }
+}

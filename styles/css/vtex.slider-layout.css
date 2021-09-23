@@ -1,0 +1,14 @@
+.sliderArrows {
+  background-color: #ebebeb !important;
+  border-radius: 16px;
+  height: 36px;
+  width: 36px;
+}
+
+.slideChildrenContainer {
+  padding: 0 12px;
+}
+
+.sliderLayoutContainer {
+  margin-bottom: 40px;
+}
