@@ -7,6 +7,21 @@
   margin-top: 4px;
 }
 
+.installments--productInstallmentsStyle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #008BEA;
+  margin: 0;
+  margin-top: 4px;
+}
+
+.installments--productInstallmentsStyle::after {
+  content: " sem juros";
+  font-size: 16px;
+  color: #008BEA;
+}
+
 .spotPrice {
   color: #242424;
   font-family: 'Roboto';

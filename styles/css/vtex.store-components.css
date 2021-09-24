@@ -133,6 +133,7 @@
 
 .shippingContainer {
   display: flex;
+  max-width: 305px;
 }
 
 .shippingContainer :global(
@@ -209,4 +210,10 @@
 
 .productImageTag--main {
   max-height: 390px!important;
+}
+
+.shippingTableBody {
+  display: block;
+  max-height: 120px;
+  overflow-y: auto;
 }

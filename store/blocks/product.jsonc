@@ -81,7 +81,7 @@
       "blockClass": "productPricesDesktop"
     },
     "children": [
-      "product-installments",
+      "product-installments#product",
       "product-spot-price",
       "rich-text#desconto"
     ]
@@ -246,7 +246,7 @@
       "blockClass": "productPageInfo"
     },
     "children": [
-      "product-installments",
+      "product-installments#product",
       "product-spot-price",
       "rich-text#desconto",
       "sticky-layout#buy-button",
@@ -254,9 +254,15 @@
       "product-description"
     ]
   },
+  "product-installments#product": {
+    "props": {
+      "message": "{installmentsNumber}x de {installmentValue}",
+      "blockClass": "productInstallmentsStyle"
+    }
+  },
   "product-installments": {
     "props": {
-      "message": "{installmentsNumber}x de {installmentValue} sem juros",
+      "message": "{installmentsNumber}x de {installmentValue}",
       "blockClass": "installmentsStyle"
     }
   },

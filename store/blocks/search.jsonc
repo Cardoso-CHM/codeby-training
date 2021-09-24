@@ -136,7 +136,7 @@
   },
   "product-installments": {
     "props": {
-      "message": "{installmentsNumber}x de {installmentValue} sem juros",
+      "message": "{installmentsNumber}x de {installmentValue}",
       "blockClass": "installmentsStyle"
     }
   },

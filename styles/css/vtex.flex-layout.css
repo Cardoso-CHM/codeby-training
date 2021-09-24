@@ -144,10 +144,6 @@
   height: 0 !important;
 }
 
-.flexCol--shippingWrapper {
-  max-width: 305px;
-}
-
 .flexCol--productPricesDesktop {
   padding: 28px 0;
 }
